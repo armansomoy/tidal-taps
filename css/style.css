@@ -212,7 +212,7 @@ body {
 /*===== rents part css start =====*/
 #rents .rents-img {
     background-image: url(../images/9.jpg);
-    height: 400px;
+    height: 425px;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
@@ -248,11 +248,13 @@ body {
 }
 
 #rents ul li {
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 600;
     color: #A77749;
+    line-height: 30px;
     text-transform: capitalize;
 }
+
 
 /*===== rents part css ends =====*/
 
