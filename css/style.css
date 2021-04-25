@@ -33,25 +33,16 @@ h6 {
 html,
 body {
     scroll-behavior: smooth;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Cormorant', serif;
 }
 
 /*===== Common css Ends =====*/
 
 /*===== navbar part css start =====*/
 .navbar {
-    padding-top: 15px;
-    position: absolute;
-    top: 0px;
-    left: 0;
-    width: 100%;
+    height: 90px;
     transition: all linear .3s;
-}
-
-.navbar-brand {
-    color: #fff !important;
-    font-weight: bold;
-    font-size: 35px;
+    background-color: #A77749;
 }
 
 .bg {
@@ -72,20 +63,45 @@ body {
     }
 }
 
+.navbar .navbar-brand {
+    font-size: 40px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.navbar .navbar-brand:hover {
+    color: #fff;
+}
+
 .navbar-light .navbar-nav .nav-link {
-    color: #ffff;
-    font-size: 18px;
+    color: #ffff !important;
+    font-size: 20px;
     text-transform: capitalize;
     font-weight: 400;
     transition: all linear .3s;
     position: relative;
-    line-height: 100px;
-    padding: 0px 15px;
+    padding: 0px 30px;
 }
 
+.navbar-light .navbar-nav .nav-link:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #c7b299;
+    opacity: 0;
+    transition: all linear .3s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover:after {
+    opacity: 1;
+    width: 100%;
+}
 
 .navbar-light .navbar-nav .nav-link:hover {
-    color: #c7b299;
+    color: #c7b299 !important;
 }
 
 .navbar-light .navbar-nav .nav-link.active {
@@ -97,22 +113,18 @@ body {
     width: 100%;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 15px;
-    padding-left: 15px;
-}
+
 
 /*===== navbar part css start =====*/
 
 /*===== banner part css start =====*/
 #banner {
-    background: url(../images/1c4e4f_9f5506a588e0435b9dfceb4e34d6b498_mv2_d_6646_4431_s_4_2.webp);
+    background: url(../images/banner.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 900px;
     position: relative;
-    background-attachment: fixed;
 }
 
 #banner .banner_overlay {
@@ -121,7 +133,7 @@ body {
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(167, 119, 73, 0.35);
 }
 
 .banner_item {
@@ -129,88 +141,477 @@ body {
 }
 
 .banner_item h3 {
-    font-size: 28px;
+    padding-top: 300px;
+    font-size: 32px;
     color: #ffffff;
-    font-weight: 500;
-    padding-bottom: 6px;
+    font-weight: 600;
+    padding-bottom: 15px;
+    text-transform: Uppercase;
 }
 
 .banner_item h1 {
-    padding-top: 300px;
-    font-size: 52px;
+    font-size: 80px;
     color: #ffffff;
-    font-weight: 800;
-    padding-bottom: 14px;
+    font-weight: 700;
+    text-transform: Uppercase;
+    border-top: 5px solid #fff;
+    border-bottom: 5px solid #fff;
 }
 
 .banner_item p {
-    font-size: 16px;
+    font-size: 20px;
     color: #ffffff;
-    font-weight: 300;
+    font-weight: 400;
     padding-bottom: 55px;
+    padding-top: 25px;
 }
 
 .banner_item a {
-    font-size: 14px;
+    font-size: 16px;
     color: #ffffff;
     font-weight: 800;
-    padding: 21px 38px;
+    padding: 16px 35px;
     border-radius: 3px;
-    background: #998675;
-    border-bottom: 3px solid #736357;
+    background: transparent;
+    border: 3px solid #fff;
     text-transform: uppercase;
+    transition: all linear .3s;
+}
+
+.banner_item a:hover {
+    color: #A77749;
+    background: #fff;
 }
 
 /*===== banner part css ends =====*/
 
-/*===== about part css ends =====*/
+/*===== about part css start =====*/
 #about {
-    background-color: #000;
-    padding-top: 100px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
-#about h1 {
-    color: #fff;
-    font-size: 35px;
-    font-weight: 600;
-    padding-bottom: 100px;
+#about h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #A77749;
 }
 
 #about p {
-    color: #fff;
     font-size: 16px;
     font-weight: 400;
-    padding-bottom: 100px;
+    color: #A77749;
+    padding: 15px 250px 0px 250px;
+    font-family: 'Montserrat', sans-serif;
 }
+
 
 /*===== about part css ends =====*/
 
 
-/*===== included part css start =====*/
-#included {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-image: url(../images/banner.jpg);
-    filter: grayscale(100%);
-    height: 500px;
+/*===== rents part css start =====*/
+#rents .rents-img {
+    background-image: url(../images/9.jpg);
+    height: 400px;
     background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#rents h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #A77749;
+}
+
+#rents p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #A77749;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#rents .rents-txt {
+    padding-top: 40px;
+    padding-bottom: 52px;
+    padding-left: 25px;
+}
+
+#rents p span {
+    padding-top: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #A77749;
+}
+
+#rents ul {
+    padding-left: 45px;
+}
+
+#rents ul li {
+    font-size: 16px;
+    font-weight: 500;
+    color: #A77749;
+    text-transform: capitalize;
+}
+
+/*===== rents part css ends =====*/
+
+
+/*===== taps part css start =====*/
+
+#taps {
+    height: 350px;
+}
+
+#taps .taps-img img {
+    margin-left: -15px !important;
+    width: 100%;
+    height: 350px;
+}
+
+#taps h3 {
+    padding-top: 120px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #A77749;
+}
+
+#taps p {
+    padding: 20px 0px 40px 0px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #A77749;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*===== taps part css ends =====*/
+
+
+/*===== included part css start =====*/
+
+#included .included-img {
+    background-image: url(../images/8.jpg);
+    height: 400px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#included h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #A77749;
+}
+
+#included p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #A77749;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 10px;
+}
+
+#included .included-txt {
+    padding-top: 80px;
+    padding-bottom: 35px;
+    padding-left: 25px;
+}
+
+#included ul {
+    padding-left: 45px;
+}
+
+#included ul li {
+    font-size: 18px;
+    font-weight: 600;
+    color: #A77749;
+    line-height: 30px;
+    text-transform: capitalize;
+}
+
+/*===== included part css ends =====*/
+
+
+/*===== size part css start =====*/
+
+#size {
+    height: 350px;
+}
+
+#size .size-img img {
+    margin-left: -15px !important;
+    width: 100%;
+    height: 350px;
+}
+
+#size h3 {
+    padding-top: 100px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #A77749;
+    padding-bottom: 20px;
+}
+
+#size ul {
+    padding-left: 45px;
+}
+
+#size ul li {
+    font-size: 18px;
+    font-weight: 600;
+    color: #A77749;
+    line-height: 30px;
+    text-transform: capitalize;
+}
+
+
+/*===== size part css ends =====*/
+
+
+/*===== license part css start =====*/
+
+#license .license-img {
+    background-image: url(../images/NoPath.png);
+    height: 525px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#license h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #A77749;
+}
+
+#license p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #A77749;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 15px;
+    padding-right: 35px;
+}
+
+#license .license-txt {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 25px;
+}
+
+/*===== license part css ends =====*/
+
+
+/*===== footer part css start =====*/
+#footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #A77749;
+}
+
+#footer p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    padding-right: 70px;
+}
+
+#footer h5 {
+    padding-left: 100px;
+}
+
+#footer a {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 800;
+    padding: 16px 35px;
+    border-radius: 3px;
+    background: transparent;
+    border: 3px solid #fff;
+    text-transform: uppercase;
+    transition: all linear .3s;
+    border-radius: 50px;
+}
+
+#footer a:hover {
+    color: #A77749;
+    background: #fff;
+}
+
+/*===== footer part css ends =====*/
+
+/*===== banner part css start =====*/
+#about-banner {
+    background-color: #A77749;
+    height: 450px;
+}
+
+#about-banner .banner_item h2 {
+    padding-top: 200px;
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: Uppercase;
+}
+
+/*===== banner part css ends =====*/
+
+
+/*===== response part css start =====*/
+#response {
+    background: url(../images/banner.jpg);
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    height: 600px;
     position: relative;
+    background-attachment: fixed;
 }
-#included .included-overlay{
+
+#response .response_overlay {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(167, 119, 73, 0.35);
 }
 
-#included .include-txt{
-    background-color: #ffffff;
-    height: 500px;
+.response-txt {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: #fff;
+    padding: 100px 150px;
 }
 
-/*===== included part css ends =====*/
+.response-txt h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #A77749;
+}
+
+.response-txt p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #A77749;
+    padding-top: 15px;
+    padding-right: 35px;
+}
+
+/*===== response part css ends =====*/
+
+
+
+/*===== community part css start =====*/
+#community {
+    background: url(../images/party-2250007_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+    position: relative;
+    background-attachment: fixed;
+}
+
+#community .community_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(167, 119, 73, 0.35);
+}
+
+.community-txt {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: #fff;
+    padding: 100px 150px;
+}
+
+.community-txt h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #A77749;
+}
+
+.community-txt p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #A77749;
+    padding-top: 15px;
+    padding-right: 35px;
+}
+
+/*===== community part css ends =====*/
+
+
+
+
+#contact .contact-img {
+    background-image: url(../images/3.png);
+    height: 1100px;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+}
+
+#contact h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #A77749;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#contact .contact-txt {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#contact label {
+    color: #A77749;
+}
+
+#contact input {
+    background-color: #72313286;
+    color: #fff;
+}
+
+#contact ::placeholder {
+    color: #fff;
+}
+
+#contact select {
+    background-color: #72313286;
+    color: #fff;
+}
+
+
+#contact h5 {
+    text-align: center;
+    padding-top: 30px;
+}
+
+#contact a {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 800;
+    padding: 12px 45px;
+    border-radius: 3px;
+    background: transparent;
+    border: 2px solid #fff;
+    background-color: #723132;
+    text-transform: uppercase;
+    transition: all linear .3s;
+
+}
+
+
+#contact a:hover {
+    color: #723132;
+    background-color: transparent;
+    border: 2px solid #723132;
+}
+
+/*===== license part css ends =====*/
+
+/*===== contact part css ends =====*/
