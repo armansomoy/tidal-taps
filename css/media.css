@@ -1,0 +1,38 @@
+/*======== large device =========*/
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+/*======== medium device =========*/
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+/*======== small device =========*/
+
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+/*======== Extra small device =========*/
+
+@media (max-width: 575.98px) {
+    .navbar-toggler i {
+        font-size: 30px;
+        color: #ffffff;
+        outline: 0;
+    }
+
+    .navbar-light .navbar-toggler {
+        color: rgba(0, 0, 0, .0);
+        border-color: rgba(0, 0, 0, .0);
+    }
+
+    .navbar {
+        padding-top: 5px;
+    }
+
+    .navbar-nav {
+        background: #191919;
+        text-align: center;
+    }
+
+    #banner {
+        z-index: 9;
+    }
+
+}
