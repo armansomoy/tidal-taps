@@ -221,8 +221,8 @@ body {
 
 /*===== rents part css start =====*/
 #rents .rents-img {
-    background-image: url(../images/9.jpg);
-    height: 425px;
+    background-image: url(../images/beach-1852945_1280.jpg);
+    height: 525px;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
@@ -241,7 +241,7 @@ body {
 }
 
 #rents .rents-txt {
-    padding-top: 40px;
+    padding-top: 100px;
     padding-bottom: 52px;
     padding-left: 25px;
 }
@@ -303,9 +303,15 @@ body {
 
 #included .included-img {
     background-image: url(../images/8.jpg);
-    height: 400px;
+    height: 525px;
     background-attachment: fixed;
     background-repeat: no-repeat;
+}
+
+#included .included-txt {
+    padding-top: 120px;
+    padding-bottom: 35px;
+    padding-left: 25px;
 }
 
 #included h3 {
@@ -322,11 +328,6 @@ body {
     padding-top: 10px;
 }
 
-#included .included-txt {
-    padding-top: 80px;
-    padding-bottom: 35px;
-    padding-left: 25px;
-}
 
 #included ul {
     padding-left: 45px;
@@ -453,8 +454,21 @@ body {
 
 /*===== banner part css start =====*/
 #about-banner {
-    background-color: #A77749;
+    background-image: url(../images/about-banner.jpg);
     height: 450px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#about-banner .about-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(167, 119, 73, 0.50);
 }
 
 #about-banner .banner_item h2 {
@@ -474,7 +488,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 600px;
+    height: 640px;
     position: relative;
     background-attachment: fixed;
 }
@@ -519,7 +533,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 600px;
+    height: 570px;
     position: relative;
     background-attachment: fixed;
 }
