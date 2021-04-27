@@ -40,7 +40,7 @@ body {
 
 /*===== navbar part css start =====*/
 .navbar {
-    height: 100px;
+    height: 120px;
     position: absolute;
     top: 0px;
     left: 0;
@@ -48,12 +48,14 @@ body {
     transition: all linear .3s;
 }
 
-
-.navbar .navbar-brand {
+#navbar .navbar-brand img{
+    width: 100%;
+}
+/* .navbar .navbar-brand {
     font-size: 40px;
     font-weight: 400;
     color: #fff;
-}
+} */
 
 .navbar .navbar-brand:hover {
     color: #fff;
