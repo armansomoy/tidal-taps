@@ -40,6 +40,153 @@ body {
 
 /*===== navbar part css start =====*/
 .navbar {
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    transition: all linear .3s;
+}
+
+
+.navbar .navbar-brand {
+    font-size: 40px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.navbar .navbar-brand:hover {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #ffff;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 400;
+    transition: all linear .3s;
+    position: relative;
+    padding: 0px 15px;
+}
+
+.navbar-light .navbar-nav .nav-link:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #c7b299;
+    opacity: 0;
+    transition: all linear .3s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover:after {
+    opacity: 1;
+    width: 100%;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #c7b299;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: #c7b299;
+}
+
+.navbar-light .navbar-nav .nav-link.active:after {
+    opacity: 1;
+    width: 100%;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/*===== navbar part css start =====*/
+
+/*===== banner part css start =====*/
+#banner {
+    background: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 900px;
+    position: relative;
+}
+
+#banner .banner_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(17, 17, 17, 0.7);
+}
+
+.banner_item {
+    padding-bottom: 25px;
+}
+
+@font-face {
+    font-family: 'Abiah-Bold';
+    src: url(../webfont/Abiah-Bold.woff);
+    font-style: bold;
+    font-weight: bold;
+}
+
+.banner_item h3 {
+    padding-top: 300px;
+    font-size: 32px;
+    color: #ffffff;
+    font-weight: bold;
+    padding-bottom: 15px;
+    font-family: Abiah-Bold;
+    text-transform: capitalize;
+}
+
+.banner_item h1 {
+    font-size: 80px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: Abiah-Bold;
+    text-transform: capitalize;
+    border-top: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+}
+
+.banner_item p {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 400;
+    padding-bottom: 55px;
+    padding-top: 25px;
+}
+
+.banner_item a {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 800;
+    padding: 16px 35px;
+    border-radius: 3px;
+    background: transparent;
+    border: 3px solid #fff;
+    text-transform: uppercase;
+    transition: all linear .3s;
+}
+
+.banner_item a:hover {
+    color: #A77749;
+    background: #fff;
+}
+
+/*===== banner part css ends =====*/
+
+
+
+/*===== navbar part css start =====*/
+/* .navbar {
     height: 90px;
     transition: all linear .3s;
     background-color: #A77749;
@@ -112,13 +259,13 @@ body {
     opacity: 1;
     width: 100%;
 }
-
+ */
 
 
 /*===== navbar part css start =====*/
 
 /*===== banner part css start =====*/
-#banner {
+/* #banner {
     background: url(../images/banner.jpg);
     background-size: cover;
     background-position: center;
@@ -191,7 +338,7 @@ body {
 .banner_item a:hover {
     color: #A77749;
     background: #fff;
-}
+} */
 
 /*===== banner part css ends =====*/
 
@@ -417,7 +564,7 @@ body {
 #footer {
     padding-top: 100px;
     padding-bottom: 100px;
-    background-color: #A77749;
+    background-color: #191a22;
 }
 
 #footer p {
@@ -448,13 +595,16 @@ body {
 #footer a:hover {
     color: #A77749;
     background: #fff;
+    -webkit-box-shadow: 0px 0px 34px -4px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 34px -4px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 34px -4px rgba(0, 0, 0, 1);
 }
 
 /*===== footer part css ends =====*/
 
 /*===== banner part css start =====*/
 #about-banner {
-    background-image: url(../images/about-banner.jpg);
+    background-image: url(../images/about-banner.jpeg);
     height: 450px;
     background-size: cover;
     background-position: center;
@@ -468,7 +618,7 @@ body {
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(167, 119, 73, 0.50);
+    background: rgba(0, 0, 0, 0.60);
 }
 
 #about-banner .banner_item h2 {
