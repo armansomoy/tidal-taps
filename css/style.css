@@ -595,9 +595,9 @@ body {
 #footer a:hover {
     color: #A77749;
     background: #fff;
-    -webkit-box-shadow: 0px 0px 34px -4px rgba(0, 0, 0, 1);
-    -moz-box-shadow: 0px 0px 34px -4px rgba(0, 0, 0, 1);
-    box-shadow: 0px 0px 34px -4px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: 0px 0px 45px 34px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 45px 34px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 45px 34px rgba(0, 0, 0, 0.3);
 }
 
 /*===== footer part css ends =====*/
@@ -721,13 +721,77 @@ body {
 /*===== community part css ends =====*/
 
 
+/*===== inquire part css start =====*/
 
-
-#contact .contact-img {
+#inquire .inquire-img {
     background-image: url(../images/3.png);
     height: 1100px;
-    /* background-attachment: fixed; */
     background-repeat: no-repeat;
+}
+
+#inquire h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #A77749;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#inquire .inquire-txt {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#inquire label {
+    color: #A77749;
+}
+
+#inquire input {
+    background-color: #72313286;
+    color: #fff;
+}
+
+#inquire ::placeholder {
+    color: #fff;
+}
+
+#inquire select {
+    background-color: #72313286;
+    color: #fff;
+}
+
+
+#inquire h5 {
+    text-align: center;
+    padding-top: 30px;
+}
+
+#inquire a {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 800;
+    padding: 12px 45px;
+    border-radius: 3px;
+    background: transparent;
+    border: 2px solid #fff;
+    background-color: #723132;
+    text-transform: uppercase;
+    transition: all linear .3s;
+
+}
+
+#inquire a:hover {
+    color: #723132;
+    background-color: transparent;
+    border: 2px solid #723132;
+}
+
+/*===== inquire part css ends =====*/
+
+
+/*===== contact part css start =====*/
+#contact img {
+    width: 100%;
 }
 
 #contact h3 {
@@ -761,6 +825,12 @@ body {
     color: #fff;
 }
 
+#contact textarea {
+    background-color: #72313286;
+    resize: none;
+    color: #fff;
+}
+
 
 #contact h5 {
     text-align: center;
@@ -781,13 +851,25 @@ body {
 
 }
 
-
 #contact a:hover {
     color: #723132;
     background-color: transparent;
     border: 2px solid #723132;
 }
 
-/*===== license part css ends =====*/
-
 /*===== contact part css ends =====*/
+
+
+/*===== coming-soon part css start =====*/
+#coming-soon {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#coming-soon h1{
+    font-size: 82px;
+    font-weight: 700;
+    color: #A77749;
+}
+
+/*===== coming-soon part css ends =====*/
