@@ -48,9 +48,10 @@ body {
     transition: all linear .3s;
 }
 
-#navbar .navbar-brand img{
+#navbar .navbar-brand img {
     width: 100%;
 }
+
 /* .navbar .navbar-brand {
     font-size: 40px;
     font-weight: 400;
@@ -360,7 +361,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     color: #A77749;
-    padding: 15px 250px 0px 250px;
+    padding: 15px 250px 0px;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -422,6 +423,10 @@ body {
 
 #taps {
     height: 350px;
+}
+
+#taps .pc-device-none {
+    display: none;
 }
 
 #taps .taps-img img {
@@ -497,6 +502,10 @@ body {
 
 #size {
     height: 350px;
+}
+
+#size .pc-device-none {
+    display: none;
 }
 
 #size .size-img img {
@@ -868,7 +877,7 @@ body {
     padding-bottom: 100px;
 }
 
-#coming-soon h1{
+#coming-soon h1 {
     font-size: 82px;
     font-weight: 700;
     color: #A77749;

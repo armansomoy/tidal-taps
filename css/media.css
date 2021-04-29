@@ -1,15 +1,279 @@
 /*======== large device =========*/
 @media (min-width: 992px) and (max-width: 1199.98px) {}
 
+
 /*======== medium device =========*/
-@media (min-width: 768px) and (max-width: 991.98px) {}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 16px;
+        padding: 0px 12px;
+    }
 
-/*======== small device =========*/
+    #footer p {
+        padding-right: 0px;
+    }
 
-@media (min-width: 576px) and (max-width: 767.98px) {}
+    #about p {
+        padding: 15px 50px 0px;
+    }
 
-/*======== Extra small device =========*/
+    #rents {
+        text-align: center;
+    }
 
+    .rents-img {
+        height: 400px;
+    }
+
+    #rents ul li {
+        list-style: none;
+    }
+
+    #rents ul {
+        padding-left: 0px;
+    }
+
+    #taps {
+        height: 560px;
+        text-align: center;
+    }
+
+    #taps p {
+        padding: 20px 50px 30px;
+    }
+
+    #taps h3 {
+        padding-top: 20px;
+    }
+
+    #taps .pc-device-none {
+        display: block;
+    }
+
+    #taps .mobile-device-block {
+        display: none;
+    }
+
+    #included {
+        text-align: center;
+    }
+
+    #included .included-img {
+        height: 400px;
+    }
+
+    #included .included-txt {
+        padding-top: 40px;
+    }
+
+    #included ul {
+        padding-left: 0px;
+    }
+
+    #included ul li {
+        list-style: none;
+    }
+
+    #size {
+        height: 620px;
+        text-align: center;
+    }
+
+    #size .pc-device-none {
+        display: block;
+    }
+
+    #size .mobile-device-block {
+        display: none;
+    }
+
+    #size h3 {
+        padding-top: 40px;
+    }
+
+    #size ul {
+        padding-left: 0px;
+    }
+
+    #size ul li {
+        list-style: none;
+    }
+
+    #license {
+        text-align: center;
+    }
+
+    #license .license-img {
+        height: 400px;
+    }
+
+    .response-txt {
+        padding: 50px 100px;
+    }
+
+    #response {
+        height: 560px;
+    }
+
+}
+
+
+
+
+/*======== small device col-sm =========*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .navbar-light .navbar-nav .nav-link {
+        padding: 5px 0px;
+    }
+
+    .navbar-toggler i {
+        font-size: 30px;
+        color: #ffffff;
+        outline: 0;
+    }
+
+    .navbar-light .navbar-toggler {
+        color: rgba(0, 0, 0, .0);
+        border-color: rgba(0, 0, 0, .0);
+    }
+
+    .navbar {
+        padding-top: 5px;
+    }
+
+    .navbar-nav {
+        background: #191919;
+        text-align: center;
+    }
+
+    #footer {
+        text-align: center;
+    }
+
+    #footer p {
+        padding-right: 0px;
+        padding-bottom: 30px;
+    }
+
+    #footer h5 {
+        padding-left: 0px;
+    }
+
+    #about p {
+        padding: 15px 50px 0px;
+    }
+
+    #rents {
+        text-align: center;
+    }
+
+    .rents-img {
+        height: 400px;
+    }
+
+    #rents ul li {
+        list-style: none;
+    }
+
+    #rents ul {
+        padding-left: 0px;
+    }
+
+    #taps {
+        height: 600px;
+        text-align: center;
+    }
+
+    #taps .taps-img img {
+        margin-left: -0px !important;
+    }
+
+    #taps p {
+        padding: 20px 30px 30px;
+    }
+
+    #taps h3 {
+        padding-top: 20px;
+    }
+
+    #taps .pc-device-none {
+        display: block;
+    }
+
+    #taps .mobile-device-block {
+        display: none;
+    }
+
+    #included {
+        text-align: center;
+    }
+
+    #included .included-img {
+        height: 400px;
+    }
+
+    #included .included-txt {
+        padding-top: 40px;
+    }
+
+    #included ul {
+        padding-left: 0px;
+    }
+
+    #included ul li {
+        list-style: none;
+    }
+
+    #size {
+        height: 540px;
+        text-align: center;
+    }
+
+    #size .pc-device-none {
+        display: block;
+    }
+
+    #size .mobile-device-block {
+        display: none;
+    }
+
+    #size .size-img img {
+        margin-left: 0px !important;
+        height: 100%;
+    }
+
+    #size h3 {
+        padding-top: 40px;
+    }
+
+    #size ul {
+        padding-left: 0px;
+    }
+
+    #size ul li {
+        list-style: none;
+    }
+
+    #license {
+        text-align: center;
+    }
+
+    #license .license-img {
+        height: 400px;
+    }
+
+    .response-txt {
+        padding: 50px 50px;
+    }
+
+    #response {
+        height: 560px;
+    }
+}
+
+
+
+/*======== Extra small device Col =========*/
 @media (max-width: 575.98px) {
     .navbar-toggler i {
         font-size: 30px;
@@ -31,5 +295,171 @@
         text-align: center;
     }
 
-    
+    #banner {
+        height: 800px;
+    }
+
+    .banner_item h1 {
+        font-size: 65px;
+    }
+
+    #footer {
+        text-align: center;
+    }
+
+    #footer p {
+        padding-right: 0px;
+        padding-bottom: 30px;
+    }
+
+    #footer h5 {
+        padding-left: 0px;
+    }
+
+    #about p {
+        padding: 15px 0px 0px;
+    }
+
+
+    #about {
+        padding-bottom: 50px;
+    }
+
+    #rents {
+        text-align: center;
+    }
+
+    #rents .rents-img {
+        height: 300px;
+    }
+
+    #rents .rents-txt {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    #rents h3 {
+        font-size: 30px;
+    }
+
+    #rents ul li {
+        list-style: none;
+    }
+
+    #rents ul {
+        padding-left: 0px;
+    }
+
+    #taps {
+        height: 560px;
+        text-align: center;
+    }
+
+    #taps .taps-img img {
+        margin-left: 0px !important;
+        height: 100%;
+    }
+
+    #taps p {
+        padding: 20px 0px 30px;
+        font-size: 14px;
+    }
+
+    #taps h3 {
+        padding-top: 20px;
+    }
+
+    #taps .pc-device-none {
+        display: block;
+    }
+
+    #taps .mobile-device-block {
+        display: none;
+    }
+
+    #included {
+        text-align: center;
+    }
+
+    #included .included-img {
+        height: 300px;
+    }
+
+    #included .included-txt {
+        padding-top: 40px;
+    }
+
+    #included p {
+        font-size: 14px;
+    }
+
+    #included ul {
+        padding-left: 0px;
+    }
+
+    #included ul li {
+        list-style: none;
+    }
+
+    #size {
+        height: 530px;
+        text-align: center;
+    }
+
+    #size .size-img img {
+        margin-left: 0px !important;
+        width: 100%;
+        height: 100%;
+    }
+
+    #size .pc-device-none {
+        display: block;
+    }
+
+    #size .mobile-device-block {
+        display: none;
+    }
+
+    #size h3 {
+        padding-top: 40px;
+    }
+
+    #size ul {
+        padding-left: 0px;
+    }
+
+    #size ul li {
+        list-style: none;
+    }
+
+    #license {
+        text-align: center;
+    }
+
+    #license .license-img {
+        height: 300px;
+    }
+
+    #license .license-txt {
+        padding-top: 50px;
+    }
+
+    #license p {
+        font-size: 14px;
+        padding-right: 0px;
+    }
+
+    .response-txt {
+        padding: 30px 30px;
+    }
+
+    #response {
+        height: 500px;
+    }
+
+    .response-txt p {
+        font-size: 14px;
+        padding-right: 0px;
+    }
+
 }
