@@ -115,7 +115,23 @@
         height: 560px;
     }
 
+    #inquire .inquire-img {
+        height: 1368px;
+    }
+
+    .community-txt {
+        padding: 100px 100px;
+    }
+
+    .community-txt p {
+        padding-right: 0px;
+    }
+
+    #contact img {
+        height: 674px;
+    }
 }
+
 
 
 
@@ -159,8 +175,16 @@
         padding-left: 0px;
     }
 
+    #about-banner .banner_item h2 {
+        padding-top: 260px;
+    }
+
     #about p {
         padding: 15px 50px 0px;
+    }
+
+    #footer {
+        text-align: center;
     }
 
     #rents {
@@ -269,6 +293,35 @@
     #response {
         height: 560px;
     }
+
+    #inquire .inquire-img {
+        display: none;
+    }
+
+    .community-txt h3 {
+        font-size: 30px;
+    }
+
+    .community-txt {
+        padding: 50px 50px;
+    }
+
+    .community-txt p {
+        padding-right: 0px;
+    }
+
+    #community {
+        height: 470px;
+    }
+
+    #contact img {
+        display: none;
+    }
+
+    .contact-footer {
+        padding-top: 50px !important;
+        padding-bottom: 0px !important;
+    }
 }
 
 
@@ -299,8 +352,8 @@
         height: 800px;
     }
 
-    .banner_item h1 {
-        font-size: 65px;
+    #about-banner .banner_item h2 {
+        padding-top: 260px;
     }
 
     #footer {
@@ -315,6 +368,7 @@
     #footer h5 {
         padding-left: 0px;
     }
+
 
     #about p {
         padding: 15px 0px 0px;
@@ -462,4 +516,45 @@
         padding-right: 0px;
     }
 
+    #inquire .inquire-img {
+        display: none;
+    }
+
+    .community-txt h3 {
+        font-size: 26px;
+    }
+
+    .community-txt {
+        padding: 30px 30px;
+    }
+
+    .community-txt p {
+        padding-right: 0px;
+    }
+
+    #community {
+        height: 470px;
+    }
+
+    .community-txt p {
+        font-size: 14px;
+    }
+
+    #coming-soon {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    #coming-soon h1 {
+        font-size: 65px;
+    }
+
+    #contact img {
+        display: none;
+    }
+
+    .contact-footer {
+        padding-top: 50px !important;
+        padding-bottom: 0px !important;
+    }
 }
